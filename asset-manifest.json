@@ -1,15 +1,29 @@
 {
   "files": {
-    "main.css": "/wdya/static/css/main.2e6e1ba4.css",
-    "main.js": "/wdya/static/js/main.7c23ca13.js",
+    "main.css": "/wdya/static/css/main.b7a07672.css",
+    "main.js": "/wdya/static/js/main.b1e93aee.js",
     "static/js/453.b95b3108.chunk.js": "/wdya/static/js/453.b95b3108.chunk.js",
+    "static/media/team_headshot_5.jpg": "/wdya/static/media/team_headshot_5.e31d4accb0dec3ec77da.jpg",
+    "static/media/team_headshot_6.jpg": "/wdya/static/media/team_headshot_6.2edef673a04ba2f01447.jpg",
+    "static/media/team_headshot_1.jpg": "/wdya/static/media/team_headshot_1.f8682644f1f7a1ac0a7b.jpg",
+    "static/media/team_headshot_3.jpg": "/wdya/static/media/team_headshot_3.5f15247f70a4a73f8928.jpg",
+    "static/media/team_headshot_4.jpg": "/wdya/static/media/team_headshot_4.e0076f53a5a18ccbaa51.jpg",
+    "static/media/team_headshot_2.jpg": "/wdya/static/media/team_headshot_2.8b9f28ae2f590b4be35d.jpg",
+    "static/media/testimonial19-6.jpg": "/wdya/static/media/testimonial19-6.9b34ad1424e1b7797951.jpg",
+    "static/media/header15.jpg": "/wdya/static/media/header15.05ac4ae2adbe9eb6f639.jpg",
+    "static/media/testimonial19-4.jpg": "/wdya/static/media/testimonial19-4.9d0923f3abed069d09c3.jpg",
+    "static/media/testimonial19-2.jpg": "/wdya/static/media/testimonial19-2.03b79e69eea8fc224403.jpg",
+    "static/media/testimonial19-3.jpg": "/wdya/static/media/testimonial19-3.3c15970c6ea8654ac7fc.jpg",
+    "static/media/testimonial19-5.jpg": "/wdya/static/media/testimonial19-5.3c15970c6ea8654ac7fc.jpg",
+    "static/media/wdya_logo_bg_transparent_192.png": "/wdya/static/media/wdya_logo_bg_transparent_192.8781aa46dec9273de85c.png",
+    "static/media/wdya_logo_bg_white_192.png": "/wdya/static/media/wdya_logo_bg_white_192.8781aa46dec9273de85c.png",
     "index.html": "/wdya/index.html",
-    "main.2e6e1ba4.css.map": "/wdya/static/css/main.2e6e1ba4.css.map",
-    "main.7c23ca13.js.map": "/wdya/static/js/main.7c23ca13.js.map",
+    "main.b7a07672.css.map": "/wdya/static/css/main.b7a07672.css.map",
+    "main.b1e93aee.js.map": "/wdya/static/js/main.b1e93aee.js.map",
     "453.b95b3108.chunk.js.map": "/wdya/static/js/453.b95b3108.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e6e1ba4.css",
-    "static/js/main.7c23ca13.js"
+    "static/css/main.b7a07672.css",
+    "static/js/main.b1e93aee.js"
   ]
 }
