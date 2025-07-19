@@ -2,6 +2,7 @@
 
 import { Button } from "@relume_io/relume-ui";
 import React from "react";
+import { motion } from "framer-motion";
 import { BiLogoDribbble, BiLogoLinkedinSquare } from "react-icons/bi";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -26,7 +27,14 @@ export function Team5() {
           </p>
         </div>
         <div className="grid grid-cols-1 items-start justify-center gap-x-8 gap-y-12 md:grid-cols-3 md:gap-x-8 md:gap-y-16 lg:gap-x-12">
-          <div className="flex flex-col text-center p-6 bg-neutral-bg rounded-xl shadow-card">
+          {/* Team Member 1 */}
+          <motion.div
+            className="flex flex-col text-center p-6 bg-neutral-bg rounded-xl shadow-card"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
             <div className="mb-5 md:mb-6">
               <img
                 src={teamHeadshot1}
@@ -55,8 +63,15 @@ export function Team5() {
                 <BiLogoDribbble className="size-6" />
               </a>
             </div>
-          </div>
-          <div className="flex flex-col text-center p-6 bg-neutral-bg rounded-xl shadow-card">
+          </motion.div>
+          {/* Team Member 2 */}
+          <motion.div
+            className="flex flex-col text-center p-6 bg-neutral-bg rounded-xl shadow-card"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
             <div className="rb-5 mb-5 flex w-full items-center justify-center md:mb-6">
               <img
                 src={teamHeadshot2}
@@ -83,8 +98,15 @@ export function Team5() {
                 <BiLogoDribbble className="size-6" />
               </a>
             </div>
-          </div>
-          <div className="flex flex-col text-center p-6 bg-neutral-bg rounded-xl shadow-card">
+          </motion.div>
+          {/* Team Member 3 */}
+          <motion.div
+            className="flex flex-col text-center p-6 bg-neutral-bg rounded-xl shadow-card"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
             <div className="rb-5 mb-5 flex w-full items-center justify-center md:mb-6">
               <img
                 src={teamHeadshot3}
@@ -111,8 +133,15 @@ export function Team5() {
                 <BiLogoDribbble className="size-6" />
               </a>
             </div>
-          </div>
-          <div className="flex flex-col text-center p-6 bg-neutral-bg rounded-xl shadow-card">
+          </motion.div>
+          {/* Team Member 4 */}
+          <motion.div
+            className="flex flex-col text-center p-6 bg-neutral-bg rounded-xl shadow-card"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
             <div className="rb-5 mb-5 flex w-full items-center justify-center md:mb-6">
               <img
                 src={teamHeadshot4}
@@ -139,8 +168,15 @@ export function Team5() {
                 <BiLogoDribbble className="size-6" />
               </a>
             </div>
-          </div>
-          <div className="flex flex-col text-center p-6 bg-neutral-bg rounded-xl shadow-card">
+          </motion.div>
+          {/* Team Member 5 */}
+          <motion.div
+            className="flex flex-col text-center p-6 bg-neutral-bg rounded-xl shadow-card"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
             <div className="rb-5 mb-5 flex w-full items-center justify-center md:mb-6">
               <img
                 src={teamHeadshot5}
@@ -167,8 +203,15 @@ export function Team5() {
                 <BiLogoDribbble className="size-6" />
               </a>
             </div>
-          </div>
-          <div className="flex flex-col text-center p-6 bg-neutral-bg rounded-xl shadow-card">
+          </motion.div>
+          {/* Team Member 6 */}
+          <motion.div
+            className="flex flex-col text-center p-6 bg-neutral-bg rounded-xl shadow-card"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+          >
             <div className="rb-5 mb-5 flex w-full items-center justify-center md:mb-6">
               <img
                 src={teamHeadshot6}
@@ -177,7 +220,7 @@ export function Team5() {
               />
             </div>
             <div className="mb-3 md:mb-4">
-              <h5 className="text-md font-semibold text-neutral text-lg md:text-xl">
+              <h5 className="font-semibold text-neutral text-lg md:text-xl">
                 We're Hiring!
               </h5>
               <h6 className="md:text-md text-neutral-light">Join Us</h6>
@@ -194,7 +237,7 @@ export function Team5() {
                 <BiLogoDribbble className="size-6" />
               </a>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="mx-auto mt-14 w-full max-w-md text-center md:mt-20 lg:mt-24">
           <h4 className="font-heading mb-3 text-2xl font-bold text-neutral md:mb-4 md:text-3xl lg:text-4xl">

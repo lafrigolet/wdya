@@ -51,9 +51,9 @@ export function Layout241() {
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-4">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-4 justify-items-center">
             {features.map((feature) => (
-              <div key={feature.name} className="flex flex-col">
+              <a key={feature.name} href="#" className="group relative flex flex-col p-6 bg-neutral-bg rounded-xl shadow-card hover:shadow-lg transition-shadow duration-300">
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-neutral">
                   <div className="h-10 w-10 flex items-center justify-center rounded-lg bg-primary">
                     <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
@@ -62,13 +62,11 @@ export function Layout241() {
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-neutral-light">
                   <p className="flex-auto">{feature.description}</p>
-                  <p className="mt-6">
-                    <a href="#" className="text-sm font-semibold leading-6 text-primary hover:text-primary-dark">
-                      Learn more <span aria-hidden="true">→</span>
-                    </a>
+                  <p className="mt-6 text-sm font-semibold leading-6 text-primary group-hover:text-primary-dark">
+                    Learn more <span aria-hidden="true">→</span>
                   </p>
                 </dd>
-              </div>
+              </a>
             ))}
           </dl>
         </div>

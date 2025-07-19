@@ -32,7 +32,7 @@ export function Faq5() {
     <section className="bg-white py-16 md:py-24 lg:py-28">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-4xl">
-          <h2 className="font-heading text-4xl font-bold text-neutral mb-8">
+          <h2 className="font-heading text-4xl font-bold text-neutral mb-8 text-center">
             Frequently asked questions
           </h2>
           <dl className="space-y-6">

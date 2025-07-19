@@ -2,6 +2,8 @@
 
 import React from "react";
 
+import cta1jpg from "../assets/images/cta1.png";
+
 export function Cta1() {
   return (
     <section className="bg-white py-16 md:py-24 lg:py-28">
@@ -26,7 +28,7 @@ export function Cta1() {
           </div>
           <div>
             <img
-              src="/assets/images/cta1.jpg"
+              src={cta1jpg}
               className="w-full rounded-xl shadow-card object-cover"
               alt="Unlock Your Perfect Package"
             />

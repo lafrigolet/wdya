@@ -7,7 +7,7 @@ export function Contact19() {
   return (
     <section className="bg-white py-16 md:py-24 lg:py-28">
       <div className="container mx-auto px-4">
-        <div className="mb-12 max-w-lg md:mb-18 lg:mb-20">
+        <div className="mb-12 max-w-lg text-center mx-auto md:mb-18 lg:mb-20">
           <p className="mb-3 font-semibold text-primary md:mb-4">Connect</p>
           <h2 className="font-heading mb-5 text-4xl font-bold text-neutral md:mb-6 md:text-6xl lg:text-7xl">
             Get in Touch
