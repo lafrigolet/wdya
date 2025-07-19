@@ -1,132 +1,84 @@
 "use client";
 
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-  Button,
-} from "@relume_io/relume-ui";
+import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
+import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 import React from "react";
-import { RxPlus } from "react-icons/rx";
-import Card from "../../common/Card";
+
+const faqs = [
+  {
+    question: "What services do you offer?",
+    answer: "We provide a range of services including React development, SEO optimization, and technical consulting. Our packages are designed to meet various needs, from startups to enterprises. Each service is tailored to ensure optimal performance and user satisfaction.",
+  },
+  {
+    question: "How is pricing structured?",
+    answer: "Our pricing is based on hourly packages, offering flexibility for different project scopes. The Starter package begins at 950 CHF for 10 hours, while larger projects can be customized. This structure ensures you only pay for what you need.",
+  },
+  {
+    question: "Is multilingual support available?",
+    answer: "Yes, we offer bilingual support in Spanish and English. Our team is equipped to assist clients in both languages, ensuring clear communication. We also plan to expand support to additional languages in the future.",
+  },
+  {
+    question: "How can I contact you?",
+    answer: "You can reach us through our contact form, email, or via WhatsApp/Telegram. We are here to assist you with any inquiries or quotes you may need. Our team is ready to respond promptly.",
+  },
+  {
+    question: "What is your response time?",
+    answer: "We strive to respond to all inquiries within 24 hours. Our goal is to provide timely support to ensure your projects stay on track. Your satisfaction is our priority.",
+  },
+];
 
 export function Faq5() {
   return (
-    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container">
-        <div className="rb-12 mb-12 max-w-lg md:mb-18 lg:mb-20">
-          <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-            FAQs
+    <section className="bg-white py-16 md:py-24 lg:py-28">
+      <div className="container mx-auto px-4">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="font-heading text-4xl font-bold text-neutral mb-8">
+            Frequently asked questions
           </h2>
-          <p className="md:text-md">
-            Find answers to your questions about our services and pricing.
-          </p>
+          <dl className="space-y-6">
+            {faqs.map((faq) => (
+              <Disclosure as="div" key={faq.question} className="p-6 bg-neutral-bg rounded-xl shadow-soft">
+                {({ open }) => (
+                  <>
+                    <dt>
+                      <DisclosureButton className="flex w-full items-start justify-between text-left text-neutral">
+                        <span className="text-lg font-semibold leading-7">
+                          {faq.question}
+                        </span>
+                        <span className="ml-6 flex h-7 items-center">
+                          {open ? (
+                            <MinusSmallIcon
+                              className="h-6 w-6 text-primary"
+                              aria-hidden="true"
+                            />
+                          ) : (
+                            <PlusSmallIcon
+                              className="h-6 w-6 text-primary"
+                              aria-hidden="true"
+                            />
+                          )}
+                        </span>
+                      </DisclosureButton>
+                    </dt>
+                    <DisclosurePanel as="dd" className="mt-2 pr-12">
+                      <p className="text-base leading-7 text-neutral-light">
+                        {faq.answer}
+                      </p>
+                    </DisclosurePanel>
+                  </>
+                )}
+              </Disclosure>
+            ))}
+          </dl>
         </div>
-        <Accordion
-          type="multiple"
-          className="grid items-start justify-stretch gap-4"
-        >
-          <Card>
-            <AccordionItem value="item-0" className="border-none px-5 md:px-6">
-              <AccordionTrigger
-                icon={
-                  <RxPlus className="size-7 shrink-0 text-text-primary transition-transform duration-300 md:size-8" />
-                }
-                className="md:py-5 md:text-md [&[data-state=open]>svg]:rotate-45"
-              >
-                What services do you offer?
-              </AccordionTrigger>
-              <AccordionContent className="md:pb-6">
-                We provide a range of services including React development, SEO
-                optimization, and technical consulting. Our packages are
-                designed to meet various needs, from startups to enterprises.
-                Each service is tailored to ensure optimal performance and user
-                satisfaction.
-              </AccordionContent>
-            </AccordionItem>
-          </Card>
-          <Card>
-            <AccordionItem value="item-1" className="border-none px-5 md:px-6">
-              <AccordionTrigger
-                icon={
-                  <RxPlus className="size-7 shrink-0 text-text-primary transition-transform duration-300 md:size-8" />
-                }
-                className="md:py-5 md:text-md [&[data-state=open]>svg]:rotate-45"
-              >
-                How is pricing structured?
-              </AccordionTrigger>
-              <AccordionContent className="md:pb-6">
-                Our pricing is based on hourly packages, offering flexibility
-                for different project scopes. The Starter package begins at 950
-                CHF for 10 hours, while larger projects can be customized. This
-                structure ensures you only pay for what you need.
-              </AccordionContent>
-            </AccordionItem>
-          </Card>
-          <Card>
-            <AccordionItem value="item-2" className="border-none px-5 md:px-6">
-              <AccordionTrigger
-                icon={
-                  <RxPlus className="size-7 shrink-0 text-text-primary transition-transform duration-300 md:size-8" />
-                }
-                className="md:py-5 md:text-md [&[data-state=open]>svg]:rotate-45"
-              >
-                Is multilingual support available?
-              </AccordionTrigger>
-              <AccordionContent className="md:pb-6">
-                Yes, we offer bilingual support in Spanish and English. Our team
-                is equipped to assist clients in both languages, ensuring clear
-                communication. We also plan to expand support to additional
-                languages in the future.
-              </AccordionContent>
-            </AccordionItem>
-          </Card>
-          <Card>
-            <AccordionItem value="item-3" className="border-none px-5 md:px-6">
-              <AccordionTrigger
-                icon={
-                  <RxPlus className="size-7 shrink-0 text-text-primary transition-transform duration-300 md:size-8" />
-                }
-                className="md:py-5 md:text-md [&[data-state=open]>svg]:rotate-45"
-              >
-                How can I contact you?
-              </AccordionTrigger>
-              <AccordionContent className="md:pb-6">
-                You can reach us through our contact form, email, or via
-                WhatsApp/Telegram. We are here to assist you with any inquiries
-                or quotes you may need. Our team is ready to respond promptly.
-              </AccordionContent>
-            </AccordionItem>
-          </Card>
-          <Card>
-            <AccordionItem value="item-4" className="border-none px-5 md:px-6">
-              <AccordionTrigger
-                icon={
-                  <RxPlus className="size-7 shrink-0 text-text-primary transition-transform duration-300 md:size-8" />
-                }
-                className="md:py-5 md:text-md [&[data-state=open]>svg]:rotate-45"
-              >
-                What is your response time?
-              </AccordionTrigger>
-              <AccordionContent className="md:pb-6">
-                We strive to respond to all inquiries within 24 hours. Our goal
-                is to provide timely support to ensure your projects stay on
-                track. Your satisfaction is our priority.
-              </AccordionContent>
-            </AccordionItem>
-          </Card>
-        </Accordion>
-        <div className="mt-12 md:mt-18 lg:mt-20">
-          <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
+        <div className="mt-12 text-center">
+          <h4 className="font-heading text-2xl font-bold text-neutral mb-4">
             Still have questions?
           </h4>
-          <p className="md:text-md">We're here to help!</p>
-          <div className="mt-6 md:mt-8">
-            <Button title="Contact" variant="secondary">
-              Contact
-            </Button>
-          </div>
+          <p className="text-lg text-neutral-light mb-8">We're here to help!</p>
+          <button className="rounded-md border border-primary text-primary px-6 py-3 font-semibold hover:bg-primary-light hover:text-white transition-colors">
+            Contact
+          </button>
         </div>
       </div>
     </section>

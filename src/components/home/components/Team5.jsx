@@ -5,6 +5,13 @@ import React from "react";
 import { BiLogoDribbble, BiLogoLinkedinSquare } from "react-icons/bi";
 import { FaXTwitter } from "react-icons/fa6";
 
+import teamHeadshot1 from "../assets/images/team_headshot_1.jpg";
+import teamHeadshot2 from "../assets/images/team_headshot_2.jpg";
+import teamHeadshot3 from "../assets/images/team_headshot_3.jpg";
+import teamHeadshot4 from "../assets/images/team_headshot_4.jpg";
+import teamHeadshot5 from "../assets/images/team_headshot_5.jpg";
+import teamHeadshot6 from "../assets/images/team_headshot_6.jpg";
+
 export function Team5() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
@@ -22,7 +29,7 @@ export function Team5() {
           <div className="flex flex-col text-center">
             <div className="rb-5 mb-5 flex w-full items-center justify-center md:mb-6">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                src={teamHeadshot1}
                 alt="Relume placeholder image 1"
                 className="size-20 min-h-20 min-w-20 rounded-full object-cover"
               />
@@ -52,7 +59,7 @@ export function Team5() {
           <div className="flex flex-col text-center">
             <div className="rb-5 mb-5 flex w-full items-center justify-center md:mb-6">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                src={teamHeadshot2}
                 alt="Relume placeholder image 1"
                 className="size-20 min-h-20 min-w-20 rounded-full object-cover"
               />
@@ -80,7 +87,7 @@ export function Team5() {
           <div className="flex flex-col text-center">
             <div className="rb-5 mb-5 flex w-full items-center justify-center md:mb-6">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                src={teamHeadshot3}
                 alt="Relume placeholder image 1"
                 className="size-20 min-h-20 min-w-20 rounded-full object-cover"
               />
@@ -108,7 +115,7 @@ export function Team5() {
           <div className="flex flex-col text-center">
             <div className="rb-5 mb-5 flex w-full items-center justify-center md:mb-6">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                src={teamHeadshot4}
                 alt="Relume placeholder image 1"
                 className="size-20 min-h-20 min-w-20 rounded-full object-cover"
               />
@@ -136,7 +143,7 @@ export function Team5() {
           <div className="flex flex-col text-center">
             <div className="rb-5 mb-5 flex w-full items-center justify-center md:mb-6">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                src={teamHeadshot5}
                 alt="Relume placeholder image 1"
                 className="size-20 min-h-20 min-w-20 rounded-full object-cover"
               />
@@ -164,7 +171,7 @@ export function Team5() {
           <div className="flex flex-col text-center">
             <div className="rb-5 mb-5 flex w-full items-center justify-center md:mb-6">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                src={teamHeadshot6}
                 alt="Relume placeholder image 1"
                 className="size-20 min-h-20 min-w-20 rounded-full object-cover"
               />
