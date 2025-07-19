@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { motion } from "framer-motion";
 
 import header15jpg from "../assets/images/header15.jpg";
 
@@ -32,10 +33,13 @@ export function Header15() {
           </div>
         </div>
         <div className="mt-12">
-          <img
+          <motion.img
             src={header15jpg}
             className="w-full rounded-xl shadow-card object-cover"
             alt="Web Development Partner"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
           />
         </div>
       </div>

@@ -30,6 +30,14 @@ const useCarousel = () => {
     api.on("select", () => {
       setCurrent(api.selectedScrollSnap() + 1);
     });
+
+    const interval = setInterval(() => {
+      api.scrollNext();
+    }, 5000); // Move every 5 seconds
+
+    return () => {
+      clearInterval(interval);
+    };
   }, [api]);
 
   const handleDotClick = (index) => () => {
