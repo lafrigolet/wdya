@@ -1,5 +1,6 @@
-"use client";
+'use client';
 
+import { useTranslation } from 'react-i18next';
 import { Button, useMediaQuery } from "@relume_io/relume-ui";
 import {
   CubeIcon,
@@ -105,6 +106,7 @@ const dropdown = [
 ]
 
 export function Navbar7() {
+  const { t, i18n } = useTranslation();
   const useActive = useRelume();
   return (
     <section className="sticky top-0 z-50 flex min-h-16 w-full items-center border-b border-neutral-light bg-neutral-bg px-[5%] md:min-h-18">
@@ -121,26 +123,26 @@ export function Navbar7() {
               href="#"
               className="relative block w-auto py-3 text-neutral hover:text-primary transition-colors lg:inline-block lg:px-4 lg:py-6 lg:text-base font-sans"
             >
-              Home Page
+              {t('home_page')}
             </a>
             <a
               href="#"
               className="relative block w-auto py-3 text-neutral hover:text-primary transition-colors lg:inline-block lg:px-4 lg:py-6 lg:text-base font-sans"
             >
-              About Us
+              {t('about_us')}
             </a>
             <a
               href="#"
               className="relative block w-auto py-3 text-neutral hover:text-primary transition-colors lg:inline-block lg:px-4 lg:py-6 lg:text-base font-sans"
             >
-              Our Services
+              {t('our_services')}
             </a>
             <div>
               <button
                 className="relative flex w-full items-center justify-between py-3 text-md whitespace-nowrap lg:w-auto lg:justify-start lg:gap-2 lg:px-4 lg:py-6 lg:text-base"
                 onClick={useActive.openOnMobileDropdownMenu}
               >
-                <span>Contact Us</span>
+                <span>{t('contact_us')}</span>
                 <motion.span
                   animate={useActive.animateDropdownMenuIcon}
                   variants={{
@@ -236,11 +238,17 @@ export function Navbar7() {
             </div>
           </div>
           <div className="flex items-center gap-4">
+            <Button title="English" variant="secondary" size="sm" className="rounded-md border border-primary text-primary px-6 py-3 font-semibold hover:bg-primary-light hover:text-white transition-colors" onClick={() => i18n.changeLanguage('en')}>
+              EN
+            </Button>
+            <Button title="Español" variant="secondary" size="sm" className="rounded-md border border-primary text-primary px-6 py-3 font-semibold hover:bg-primary-light hover:text-white transition-colors" onClick={() => i18n.changeLanguage('es')}>
+              ES
+            </Button>
             <Button title="Help" variant="secondary" size="sm" className="rounded-md border border-primary text-primary px-6 py-3 font-semibold hover:bg-primary-light hover:text-white transition-colors">
-              Help
+              {t('help')}
             </Button>
             <Button title="Chat" size="sm" className="rounded-md border border-primary bg-primary px-6 py-3 text-white font-semibold shadow-soft hover:bg-primary-dark transition-colors">
-              Chat
+              {t('chat')}
             </Button>
           </div>
         </div>

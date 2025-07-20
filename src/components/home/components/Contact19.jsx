@@ -1,30 +1,32 @@
 "use client";
 
 import React, { useRef } from "react";
+import { useTranslation } from "react-i18next";
 import Card from "../../common/Card";
 import { motion } from "framer-motion";
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/outline";
 
 export function Contact19() {
+  const { t } = useTranslation();
   const cards = [
     {
       icon: <EnvelopeIcon className="size-12 text-primary" />,
-      title: "Email",
-      description: "Reach us anytime at our support email address.",
+      title: t("email_title"),
+      description: t("email_description"),
       link: "hello@relume.io",
       href: "mailto:hello@relume.io",
     },
     {
       icon: <PhoneIcon className="size-12 text-primary" />,
-      title: "Phone",
-      description: "Call us for immediate assistance or inquiries.",
+      title: t("phone_title"),
+      description: t("phone_description"),
       link: "+41 44 000 0000",
       href: "tel:+41440000000",
     },
     {
       icon: <MapPinIcon className="size-12 text-primary" />,
-      title: "Office",
-      description: "Visit us at our headquarters for personalized support.",
+      title: t("office_title"),
+      description: t("office_description"),
       link: "456 Example Ave, Zurich, Switzerland",
       href: "geo:47.3769,8.5417",
     },
@@ -34,12 +36,12 @@ export function Contact19() {
     <section className="bg-white py-16 md:py-24 lg:py-28">
       <div className="container mx-auto px-4">
         <div className="mb-12 max-w-lg text-center mx-auto md:mb-18 lg:mb-20">
-          <p className="mb-3 font-semibold text-primary md:mb-4">Connect</p>
+          <p className="mb-3 font-semibold text-primary md:mb-4">{t('connect')}</p>
           <h2 className="font-heading mb-5 text-4xl font-bold text-neutral md:mb-6 md:text-6xl lg:text-7xl">
-            Get in Touch
+            {t('get_in_touch')}
           </h2>
           <p className="text-lg text-neutral-light">
-            We’re here to help you with your inquiries.
+            {t('get_in_touch_description')}
           </p>
         </div>
         <div className="grid grid-cols-1 gap-x-12 gap-y-12 md:grid-cols-3 md:gap-y-16">
