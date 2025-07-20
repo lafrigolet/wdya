@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wdya/static/css/main.b8195372.css",
-    "main.js": "/wdya/static/js/main.d0242ced.js",
+    "main.css": "/wdya/static/css/main.386aacba.css",
+    "main.js": "/wdya/static/js/main.b567261c.js",
     "static/js/453.b95b3108.chunk.js": "/wdya/static/js/453.b95b3108.chunk.js",
     "static/media/team_headshot_5.jpg": "/wdya/static/media/team_headshot_5.e31d4accb0dec3ec77da.jpg",
     "static/media/team_headshot_6.jpg": "/wdya/static/media/team_headshot_6.2edef673a04ba2f01447.jpg",
@@ -17,15 +17,14 @@
     "static/media/testimonial19-1.jpg": "/wdya/static/media/testimonial19-1.3c15970c6ea8654ac7fc.jpg",
     "static/media/testimonial19-3.jpg": "/wdya/static/media/testimonial19-3.3c15970c6ea8654ac7fc.jpg",
     "static/media/testimonial19-5.jpg": "/wdya/static/media/testimonial19-5.3c15970c6ea8654ac7fc.jpg",
-    "static/media/wdya_logo_bg_transparent_192.png": "/wdya/static/media/wdya_logo_bg_transparent_192.8781aa46dec9273de85c.png",
-    "static/media/wdya_logo_bg_white_192.png": "/wdya/static/media/wdya_logo_bg_white_192.8781aa46dec9273de85c.png",
+    "static/media/wdya_logo_bg_transparent_192.png": "/wdya/static/media/wdya_logo_bg_transparent_192.75bbf4c84401d23a3d1d.png",
     "index.html": "/wdya/index.html",
-    "main.b8195372.css.map": "/wdya/static/css/main.b8195372.css.map",
-    "main.d0242ced.js.map": "/wdya/static/js/main.d0242ced.js.map",
+    "main.386aacba.css.map": "/wdya/static/css/main.386aacba.css.map",
+    "main.b567261c.js.map": "/wdya/static/js/main.b567261c.js.map",
     "453.b95b3108.chunk.js.map": "/wdya/static/js/453.b95b3108.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8195372.css",
-    "static/js/main.d0242ced.js"
+    "static/css/main.386aacba.css",
+    "static/js/main.b567261c.js"
   ]
 }
