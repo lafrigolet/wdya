@@ -69,7 +69,7 @@ const useRelume = () => {
 export function Navbar7() {
   const useActive = useRelume();
   return (
-    <section className="fixed top-0 z-50 flex min-h-16 w-full items-center border-b border-neutral-light bg-neutral-bg px-[5%] md:min-h-18">
+    <section className="sticky top-0 z-50 flex min-h-16 w-full items-center border-b border-neutral-light bg-neutral-bg px-[5%] md:min-h-18">
       <div className="mx-auto flex size-full max-w-full items-center justify-between">
         <a href="#">
           <img
