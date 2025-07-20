@@ -5,6 +5,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 import { RxChevronDown } from "react-icons/rx";
 
+import logopng from "../assets/images/wdya_logo_bg_white_192.png";
+
 const useRelume = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -40,34 +42,31 @@ const useRelume = () => {
 export function Navbar7() {
   const useActive = useRelume();
   return (
-    <section
-      id="relume"
-      className="relative z-[999] flex min-h-16 w-full items-center border-b border-border-primary bg-background-primary px-[5%] md:min-h-18"
-    >
+    <section className="relative z-[999] flex min-h-16 w-full items-center border-b border-gray-200 bg-white px-[5%] md:min-h-18">
       <div className="mx-auto flex size-full max-w-full items-center justify-between">
         <a href="#">
           <img
-            src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
+            src={logopng}
             alt="Logo image"
           />
         </a>
-        <div className="absolute hidden h-screen overflow-auto border-b border-border-primary bg-background-primary px-[5%] pt-4 pb-24 md:pb-0 lg:static lg:ml-6 lg:flex lg:h-auto lg:flex-1 lg:items-center lg:justify-between lg:border-none lg:bg-none lg:px-0 lg:pt-0">
+        <div className="absolute hidden h-screen overflow-auto border-b border-gray-200 bg-white px-[5%] pt-4 pb-24 md:pb-0 lg:static lg:ml-6 lg:flex lg:h-auto lg:flex-1 lg:items-center lg:justify-between lg:border-none lg:bg-none lg:px-0 lg:pt-0">
           <div className="flex flex-col items-center lg:flex-row">
             <a
               href="#"
-              className="relative block w-auto py-3 text-md lg:inline-block lg:px-4 lg:py-6 lg:text-base"
+              className="relative block w-auto py-3 text-neutral hover:text-primary transition-colors lg:inline-block lg:px-4 lg:py-6 lg:text-base"
             >
               Home Page
             </a>
             <a
               href="#"
-              className="relative block w-auto py-3 text-md lg:inline-block lg:px-4 lg:py-6 lg:text-base"
+              className="relative block w-auto py-3 text-neutral hover:text-primary transition-colors lg:inline-block lg:px-4 lg:py-6 lg:text-base"
             >
               About Us
             </a>
             <a
               href="#"
-              className="relative block w-auto py-3 text-md lg:inline-block lg:px-4 lg:py-6 lg:text-base"
+              className="relative block w-auto py-3 text-neutral hover:text-primary transition-colors lg:inline-block lg:px-4 lg:py-6 lg:text-base"
             >
               Our Services
             </a>

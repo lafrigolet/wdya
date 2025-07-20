@@ -26,7 +26,7 @@ export function Cta1() {
               </button>
             </div>
           </div>
-          <div>
+          <div className="hidden lg:block">
             <img
               src={cta1jpg}
               className="w-full rounded-xl shadow-card object-cover"

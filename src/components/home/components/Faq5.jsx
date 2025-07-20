@@ -3,6 +3,7 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 import React from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 const faqs = [
   {
@@ -40,7 +41,7 @@ export function Faq5() {
               <Disclosure as="div" key={faq.question} className="p-6 bg-neutral-bg rounded-xl shadow-soft">
                 {({ open }) => (
                   <>
-                    <dt>
+                    <dt className="cursor-pointer">
                       <DisclosureButton className="flex w-full items-start justify-between text-left text-neutral">
                         <span className="text-lg font-semibold leading-7">
                           {faq.question}
@@ -60,11 +61,26 @@ export function Faq5() {
                         </span>
                       </DisclosureButton>
                     </dt>
-                    <DisclosurePanel as="dd" className="mt-2 pr-12">
-                      <p className="text-base leading-7 text-neutral-light">
-                        {faq.answer}
-                      </p>
-                    </DisclosurePanel>
+                    <AnimatePresence initial={false}>
+                      {open && (
+                        <motion.dd
+                          key="content"
+                          initial="collapsed"
+                          animate="open"
+                          exit="collapsed"
+                          variants={{
+                            open: { opacity: 1, height: "auto" },
+                            collapsed: { opacity: 0, height: 0 }
+                          }}
+                          transition={{ duration: 0.3, ease: "easeInOut" }}
+                          className="mt-2 pr-12 overflow-hidden"
+                        >
+                          <p className="text-base leading-7 text-neutral-light">
+                            {faq.answer}
+                          </p>
+                        </motion.dd>
+                      )}
+                    </AnimatePresence>
                   </>
                 )}
               </Disclosure>
