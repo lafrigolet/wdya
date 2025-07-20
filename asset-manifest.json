@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wdya/static/css/main.58b25105.css",
-    "main.js": "/wdya/static/js/main.f309855c.js",
+    "main.css": "/wdya/static/css/main.6bc398ab.css",
+    "main.js": "/wdya/static/js/main.00856e69.js",
     "static/js/453.b95b3108.chunk.js": "/wdya/static/js/453.b95b3108.chunk.js",
     "static/media/team_headshot_5.jpg": "/wdya/static/media/team_headshot_5.e31d4accb0dec3ec77da.jpg",
     "static/media/team_headshot_6.jpg": "/wdya/static/media/team_headshot_6.2edef673a04ba2f01447.jpg",
@@ -19,12 +19,12 @@
     "static/media/testimonial19-5.jpg": "/wdya/static/media/testimonial19-5.3c15970c6ea8654ac7fc.jpg",
     "static/media/wdya_logo_bg_transparent_192.png": "/wdya/static/media/wdya_logo_bg_transparent_192.75bbf4c84401d23a3d1d.png",
     "index.html": "/wdya/index.html",
-    "main.58b25105.css.map": "/wdya/static/css/main.58b25105.css.map",
-    "main.f309855c.js.map": "/wdya/static/js/main.f309855c.js.map",
+    "main.6bc398ab.css.map": "/wdya/static/css/main.6bc398ab.css.map",
+    "main.00856e69.js.map": "/wdya/static/js/main.00856e69.js.map",
     "453.b95b3108.chunk.js.map": "/wdya/static/js/453.b95b3108.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58b25105.css",
-    "static/js/main.f309855c.js"
+    "static/css/main.6bc398ab.css",
+    "static/js/main.00856e69.js"
   ]
 }
