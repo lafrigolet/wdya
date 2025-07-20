@@ -14,6 +14,46 @@ import teamHeadshot5 from "../assets/images/team_headshot_5.jpg";
 import teamHeadshot6 from "../assets/images/team_headshot_6.jpg";
 
 export function Team5() {
+  const members = [
+    {
+      pic: teamHeadshot1,
+      name: "Alice Johnson",
+      position: "Project Manager",
+      description: "Alice ensures projects are delivered on time and exceed client expectations.",
+    },
+    {
+      pic: teamHeadshot2,
+      name: "Mark Smith",
+      position: "Lead Developer",
+      description: "Mark specializes in creating innovative solutions using the latest technologies.",
+    },
+    {
+      pic: teamHeadshot3,
+      name: "Sarah Lee",
+      position: "UX Designer",
+      description: "Sarah crafts user-friendly designs that enhance the overall experience.",
+    },
+    {
+      pic: teamHeadshot4,
+      name: "David Brown",
+      position: "SEO Specialist",
+      description: "David optimizes our projects to ensure maximum visibility and performance.",
+    },
+    {
+      pic: teamHeadshot5,
+      name: "Emily Davis",
+      position: "Marketing Manager",
+      description: "Emily drives our marketing strategies to connect with clients effectively.",
+    },
+    {
+      pic: teamHeadshot6,
+      name: "We're Hiring!",
+      position: "Join Us",
+      description: "Explore exciting opportunities to grow your career with us.",
+      alt: "We're hiring",
+    },
+  ];
+
   return (
     <section className="bg-white py-16 md:py-24 lg:py-28">
       <div className="container mx-auto px-4">
@@ -27,217 +67,42 @@ export function Team5() {
           </p>
         </div>
         <div className="grid grid-cols-1 items-start justify-center gap-x-8 gap-y-12 md:grid-cols-3 md:gap-x-8 md:gap-y-16 lg:gap-x-12">
-          {/* Team Member 1 */}
-          <motion.div
-            className="flex flex-col text-center p-6 bg-neutral-bg rounded-xl shadow-card"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          >
-            <div className="mb-5 md:mb-6">
-              <img
-                src={teamHeadshot1}
-                alt="Relume placeholder image 1"
-                className="size-20 min-h-20 min-w-20 rounded-full object-cover mx-auto"
-              />
-            </div>
-            <div className="mb-3 md:mb-4">
-              <h5 className="font-semibold text-neutral text-lg md:text-xl">
-                Alice Johnson
-              </h5>
-              <h6 className="text-neutral-light md:text-md">Project Manager</h6>
-            </div>
-            <p className="text-neutral-light">
-              Alice ensures projects are delivered on time and exceed client
-              expectations.
-            </p>
-            <div className="mt-6 grid grid-flow-col grid-cols-[max-content] gap-3.5 self-center text-primary">
-              <a href="#">
-                <BiLogoLinkedinSquare className="size-6" />
-              </a>
-              <a href="#">
-                <FaXTwitter className="size-6 p-0.5" />
-              </a>
-              <a href="#">
-                <BiLogoDribbble className="size-6" />
-              </a>
-            </div>
-          </motion.div>
-          {/* Team Member 2 */}
-          <motion.div
-            className="flex flex-col text-center p-6 bg-neutral-bg rounded-xl shadow-card"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <div className="rb-5 mb-5 flex w-full items-center justify-center md:mb-6">
-              <img
-                src={teamHeadshot2}
-                alt="Relume placeholder image 1"
-                className="size-20 min-h-20 min-w-20 rounded-full object-cover mx-auto"
-              />
-            </div>
-            <div className="mb-3 md:mb-4">
-              <h5 className="font-semibold text-neutral text-lg md:text-xl">Mark Smith</h5>
-              <h6 className="text-neutral-light md:text-md">Lead Developer</h6>
-            </div>
-            <p className="text-neutral-light">
-              Mark specializes in creating innovative solutions using the latest
-              technologies.
-            </p>
-            <div className="mt-6 grid grid-flow-col grid-cols-[max-content] gap-3.5 self-center text-primary">
-              <a href="#">
-                <BiLogoLinkedinSquare className="size-6" />
-              </a>
-              <a href="#">
-                <FaXTwitter className="size-6 p-0.5" />
-              </a>
-              <a href="#">
-                <BiLogoDribbble className="size-6" />
-              </a>
-            </div>
-          </motion.div>
-          {/* Team Member 3 */}
-          <motion.div
-            className="flex flex-col text-center p-6 bg-neutral-bg rounded-xl shadow-card"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
-            <div className="rb-5 mb-5 flex w-full items-center justify-center md:mb-6">
-              <img
-                src={teamHeadshot3}
-                alt="Relume placeholder image 1"
-                className="size-20 min-h-20 min-w-20 rounded-full object-cover mx-auto"
-              />
-            </div>
-            <div className="mb-3 md:mb-4">
-              <h5 className="font-semibold text-neutral text-lg md:text-xl">Sarah Lee</h5>
-              <h6 className="text-neutral-light md:text-md">UX Designer</h6>
-            </div>
-            <p className="text-neutral-light">
-              Sarah crafts user-friendly designs that enhance the overall
-              experience.
-            </p>
-            <div className="mt-6 grid grid-flow-col grid-cols-[max-content] gap-3.5 self-center text-primary">
-              <a href="#">
-                <BiLogoLinkedinSquare className="size-6" />
-              </a>
-              <a href="#">
-                <FaXTwitter className="size-6 p-0.5" />
-              </a>
-              <a href="#">
-                <BiLogoDribbble className="size-6" />
-              </a>
-            </div>
-          </motion.div>
-          {/* Team Member 4 */}
-          <motion.div
-            className="flex flex-col text-center p-6 bg-neutral-bg rounded-xl shadow-card"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            <div className="rb-5 mb-5 flex w-full items-center justify-center md:mb-6">
-              <img
-                src={teamHeadshot4}
-                alt="Relume placeholder image 1"
-                className="size-20 min-h-20 min-w-20 rounded-full object-cover mx-auto"
-              />
-            </div>
-            <div className="mb-3 md:mb-4">
-              <h5 className="font-semibold text-neutral text-lg md:text-xl">David Brown</h5>
-              <h6 className="text-neutral-light md:text-md">SEO Specialist</h6>
-            </div>
-            <p className="text-neutral-light">
-              David optimizes our projects to ensure maximum visibility and
-              performance.
-            </p>
-            <div className="mt-6 grid grid-flow-col grid-cols-[max-content] gap-3.5 self-center text-primary">
-              <a href="#">
-                <BiLogoLinkedinSquare className="size-6" />
-              </a>
-              <a href="#">
-                <FaXTwitter className="size-6 p-0.5" />
-              </a>
-              <a href="#">
-                <BiLogoDribbble className="size-6" />
-              </a>
-            </div>
-          </motion.div>
-          {/* Team Member 5 */}
-          <motion.div
-            className="flex flex-col text-center p-6 bg-neutral-bg rounded-xl shadow-card"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-          >
-            <div className="rb-5 mb-5 flex w-full items-center justify-center md:mb-6">
-              <img
-                src={teamHeadshot5}
-                alt="Relume placeholder image 1"
-                className="size-20 min-h-20 min-w-20 rounded-full object-cover mx-auto"
-              />
-            </div>
-            <div className="mb-3 md:mb-4">
-              <h5 className="font-semibold text-neutral text-lg md:text-xl">Emily Davis</h5>
-              <h6 className="text-neutral-light md:text-md">Marketing Manager</h6>
-            </div>
-            <p className="text-neutral-light">
-              Emily drives our marketing strategies to connect with clients
-              effectively.
-            </p>
-            <div className="mt-6 grid grid-flow-col grid-cols-[max-content] gap-3.5 self-center text-primary">
-              <a href="#">
-                <BiLogoLinkedinSquare className="size-6" />
-              </a>
-              <a href="#">
-                <FaXTwitter className="size-6 p-0.5" />
-              </a>
-              <a href="#">
-                <BiLogoDribbble className="size-6" />
-              </a>
-            </div>
-          </motion.div>
-          {/* Team Member 6 */}
-          <motion.div
-            className="flex flex-col text-center p-6 bg-neutral-bg rounded-xl shadow-card"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-          >
-            <div className="rb-5 mb-5 flex w-full items-center justify-center md:mb-6">
-              <img
-                src={teamHeadshot6}
-                alt="Relume placeholder image 1"
-                className="size-20 min-h-20 min-w-20 rounded-full object-cover mx-auto"
-              />
-            </div>
-            <div className="mb-3 md:mb-4">
-              <h5 className="font-semibold text-neutral text-lg md:text-xl">
-                We're Hiring!
-              </h5>
-              <h6 className="md:text-md text-neutral-light">Join Us</h6>
-            </div>
-            <p className="text-neutral-light">Explore exciting opportunities to grow your career with us.</p>
-            <div className="mt-6 grid grid-flow-col grid-cols-[max-content] gap-3.5 self-center text-primary">
-              <a href="#">
-                <BiLogoLinkedinSquare className="size-6" />
-              </a>
-              <a href="#">
-                <FaXTwitter className="size-6 p-0.5" />
-              </a>
-              <a href="#">
-                <BiLogoDribbble className="size-6" />
-              </a>
-            </div>
-          </motion.div>
+          {members.map((member, index) => (
+            <motion.div
+              key={member.name}
+              className="flex flex-col text-center p-6 bg-neutral-bg rounded-xl shadow-card"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5, delay: (index + 1) * 0.1 }}
+            >
+              <div className="mb-5 md:mb-6">
+                <img
+                  src={member.pic}
+                  alt={member.alt || `Headshot of ${member.name}`}
+                  className="size-20 min-h-20 min-w-20 rounded-full object-cover mx-auto"
+                />
+              </div>
+              <div className="mb-3 md:mb-4">
+                <h5 className="font-semibold text-neutral text-lg md:text-xl">
+                  {member.name}
+                </h5>
+                <h6 className="text-neutral-light md:text-md">{member.position}</h6>
+              </div>
+              <p className="text-neutral-light">{member.description}</p>
+              <div className="mt-6 grid grid-flow-col grid-cols-[max-content] gap-3.5 self-center text-primary">
+                <a href="#">
+                  <BiLogoLinkedinSquare className="size-6" />
+                </a>
+                <a href="#">
+                  <FaXTwitter className="size-6 p-0.5" />
+                </a>
+                <a href="#">
+                  <BiLogoDribbble className="size-6" />
+                </a>
+              </div>
+            </motion.div>
+          ))}
         </div>
         <div className="mx-auto mt-14 w-full max-w-md text-center md:mt-20 lg:mt-24">
           <h4 className="font-heading mb-3 text-2xl font-bold text-neutral md:mb-4 md:text-3xl lg:text-4xl">
