@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   BiLogoFacebookCircle,
   BiLogoInstagram,
@@ -28,6 +29,7 @@ const useForm = () => {
 
 export function Footer1() {
   const formState = useForm();
+  const { t } = useTranslation();
   return (
     <footer className="bg-neutral py-12 md:py-18 lg:py-20 text-white">
       <div className="container mx-auto px-4">
@@ -41,8 +43,7 @@ export function Footer1() {
               />
             </a>
             <p className="mb-5 text-neutral-light md:mb-6">
-              Subscribe to our newsletter for the latest updates on features and
-              releases.
+              {t('footer1.newsletterDescription')}
             </p>
             <div className="w-full max-w-md">
               <form
@@ -52,7 +53,7 @@ export function Footer1() {
                 <input
                   id="email"
                   type="email"
-                  placeholder="Your email here"
+                  placeholder={t('footer1.emailPlaceholder')}
                   value={formState.email}
                   onChange={formState.handleSetEmail}
                   className="w-full rounded-md border border-neutral-light bg-neutral px-4 py-2 text-white placeholder-neutral-light focus:outline-none focus:ring-2 focus:ring-primary"
@@ -61,107 +62,106 @@ export function Footer1() {
                   type="submit"
                   className="rounded-md bg-primary px-6 py-2 text-white font-semibold shadow-soft hover:bg-primary-dark transition-colors"
                 >
-                  Subscribe
+                  {t('footer1.subscribeButton')}
                 </button>
               </form>
               <p className="text-xs text-neutral-light">
-                By subscribing, you agree to our Privacy Policy and consent to
-                receive updates.
+                {t('footer1.privacyConsent')}
               </p>
             </div>
           </div>
           <div className="grid grid-cols-1 items-start gap-y-10 sm:grid-cols-2 md:col-span-2 lg:col-span-3 lg:gap-x-8">
             <div className="flex flex-col items-start justify-start">
-              <h2 className="mb-3 font-semibold text-white md:mb-4">Useful Links</h2>
+              <h2 className="mb-3 font-semibold text-white md:mb-4">{t('footer1.usefulLinks')}</h2>
               <ul>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3 text-neutral-light hover:text-white transition-colors">
-                    <span>Home Page</span>
+                    <span>{t('footer1.homePage')}</span>
                   </a>
                 </li>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3 text-neutral-light hover:text-white transition-colors">
-                    <span>About Us</span>
+                    <span>{t('footer1.aboutUs')}</span>
                   </a>
                 </li>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3 text-neutral-light hover:text-white transition-colors">
-                    <span>Contact Us</span>
+                    <span>{t('footer1.contactUs')}</span>
                   </a>
                 </li>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3 text-neutral-light hover:text-white transition-colors">
-                    <span>Services</span>
+                    <span>{t('footer1.services')}</span>
                   </a>
                 </li>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3 text-neutral-light hover:text-white transition-colors">
-                    <span>Blog Posts</span>
+                    <span>{t('footer1.blogPosts')}</span>
                   </a>
                 </li>
               </ul>
             </div>
             <div className="flex flex-col items-start justify-start">
-              <h2 className="mb-3 font-semibold text-white md:mb-4">Connect With Us</h2>
+              <h2 className="mb-3 font-semibold text-white md:mb-4">{t('footer1.connectWithUs')}</h2>
               <ul>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3 text-neutral-light hover:text-white transition-colors">
-                    <span>Support</span>
+                    <span>{t('footer1.support')}</span>
                   </a>
                 </li>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3 text-neutral-light hover:text-white transition-colors">
-                    <span>Careers</span>
+                    <span>{t('footer1.careers')}</span>
                   </a>
                 </li>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3 text-neutral-light hover:text-white transition-colors">
-                    <span>FAQs</span>
+                    <span>{t('footer1.faqs')}</span>
                   </a>
                 </li>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3 text-neutral-light hover:text-white transition-colors">
-                    <span>Feedback</span>
+                    <span>{t('footer1.feedback')}</span>
                   </a>
                 </li>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3 text-neutral-light hover:text-white transition-colors">
-                    <span>Events</span>
+                    <span>{t('footer1.events')}</span>
                   </a>
                 </li>
               </ul>
             </div>
             <div className="flex flex-col items-start justify-start">
-              <h2 className="mb-3 font-semibold text-white md:mb-4">Follow Us</h2>
+              <h2 className="mb-3 font-semibold text-white md:mb-4">{t('footer1.followUs')}</h2>
               <ul className="flex flex-col items-start">
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3 text-neutral-light hover:text-white transition-colors">
                     <BiLogoFacebookCircle className="size-6" />
-                    <span>Facebook</span>
+                    <span>{t('footer1.facebook')}</span>
                   </a>
                 </li>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3 text-neutral-light hover:text-white transition-colors">
                     <BiLogoInstagram className="size-6" />
-                    <span>Instagram</span>
+                    <span>{t('footer1.instagram')}</span>
                   </a>
                 </li>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3 text-neutral-light hover:text-white transition-colors">
                     <FaXTwitter className="size-6 p-0.5" />
-                    <span>X</span>
+                    <span>{t('footer1.x')}</span>
                   </a>
                 </li>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3 text-neutral-light hover:text-white transition-colors">
                     <BiLogoLinkedinSquare className="size-6" />
-                    <span>LinkedIn</span>
+                    <span>{t('footer1.linkedin')}</span>
                   </a>
                 </li>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3 text-neutral-light hover:text-white transition-colors">
                     <BiLogoYoutube className="size-6" />
-                    <span>YouTube</span>
+                    <span>{t('footer1.youtube')}</span>
                   </a>
                 </li>
               </ul>
@@ -170,16 +170,16 @@ export function Footer1() {
         </div>
         <div className="h-px w-full bg-neutral-light" />
         <div className="flex flex-col-reverse items-start justify-between pt-6 pb-4 text-sm md:flex-row md:items-center md:pt-8 md:pb-0">
-          <p className="mt-6 text-neutral-light md:mt-0">© 2024 Relume. All rights reserved.</p>
+          <p className="mt-6 text-neutral-light md:mt-0">{t('footer1.copyright')}</p>
           <ul className="grid grid-flow-row grid-cols-[max-content] justify-center gap-y-4 text-sm md:grid-flow-col md:gap-x-6 md:gap-y-0">
             <li className="underline text-neutral-light hover:text-white transition-colors">
-              <a href="#">Privacy Policy</a>
+              <a href="#">{t('footer1.privacyPolicy')}</a>
             </li>
             <li className="underline text-neutral-light hover:text-white transition-colors">
-              <a href="#">Terms of Service</a>
+              <a href="#">{t('footer1.termsOfService')}</a>
             </li>
             <li className="underline text-neutral-light hover:text-white transition-colors">
-              <a href="#">Cookie Settings</a>
+              <a href="#">{t('footer1.cookieSettings')}</a>
             </li>
           </ul>
         </div>

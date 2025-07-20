@@ -67,47 +67,50 @@ const useRelume = () => {
   };
 };
 
-const dropdown = [
-  {title: 'Explore Our Packages',
-   items: [
-     {icon: CubeIcon, title: 'Starter Package', description: 'Perfect for small projects and startups.'},
-     {icon: SparklesIcon, title: 'Growth Package', description: 'Ideal for growing businesses and expanding needs.'},
-     {icon: ArrowUpRightIcon, title: 'Pro Package', description: 'Comprehensive solutions for established companies.'},
-     {icon: BuildingOfficeIcon, title: 'Enterprise Package', description: 'Custom solutions tailored to your business.'},
-   ]
-  },
-  {
-    title: 'Additional Resources',
-    items: [
-      {icon: QuestionMarkCircleIcon, title: 'FAQs', description: 'Find answers to common questions here.'},
-      {icon: NewspaperIcon, title: 'Blog', description: 'Insights and tips from our experts.'},
-      {icon: ChatBubbleLeftRightIcon, title:'Testimonials', description: 'Hear from our satisfied clients.'},
-      {icon: FolderOpenIcon, title: 'Portfolio', description: 'Showcasing our successful projects.'},
-    ]
-  },
-  {
-    title: 'Connect With Us',
-    items: [
-      {icon: ShareIcon, title: 'Social Media', description: 'Follow us for updates and news.'},
-      {icon: EnvelopeIcon, title: 'Newsletter', description: 'Subscribe for the latest updates.'},
-      {icon: LifebuoyIcon, title: 'Support', description: "We're here to help you."},
-      {icon: BriefcaseIcon, title: 'Careers', description: 'Join our talented team.'},
-    ]
-  },
-  {
-    title: 'Legal Information',
-    items: [
-      {icon: ShieldCheckIcon, title: 'Privacy Policy', description: 'Read our privacy practices.'},
-      {icon: DocumentTextIcon, title: 'Terms of Service', description: 'Understand our service terms.'},
-      {icon: MapIcon, title: 'Site Map', description: 'Navigate our website easily.'},
-      {icon: PhoneIcon, title: 'Contact Info', description: 'Get in touch with us.'},
-    ]
-  }
-]
 
 export function Navbar7() {
   const { t, i18n } = useTranslation();
   const useActive = useRelume();
+
+  const dropdown = [
+    {title: t('navbar7.exploreOurPackages'),
+     items: [
+       {icon: CubeIcon, title: t('navbar7.starterPackageTitle'), description: t('navbar7.starterPackageDescription')},
+       {icon: SparklesIcon, title: t('navbar7.growthPackageTitle'), description: t('navbar7.growthPackageDescription')},
+       {icon: ArrowUpRightIcon, title: t('navbar7.proPackageTitle'), description: t('navbar7.proPackageDescription')},
+       {icon: BuildingOfficeIcon, title: t('navbar7.enterprisePackageTitle'), description: t('navbar7.enterprisePackageDescription')},
+     ]
+    },
+    {
+      title: t('navbar7.additionalResources'),
+      items: [
+        {icon: QuestionMarkCircleIcon, title: t('navbar7.faqsTitle'), description: t('navbar7.faqsDescription')},
+        {icon: NewspaperIcon, title: t('navbar7.blogTitle'), description: t('navbar7.blogDescription')},
+        {icon: ChatBubbleLeftRightIcon, title:t('navbar7.testimonialsTitle'), description: t('navbar7.testimonialsDescription')},
+        {icon: FolderOpenIcon, title: t('navbar7.portfolioTitle'), description: t('navbar7.portfolioDescription')},
+      ]
+    },
+    {
+      title: t('navbar7.connectWithUs'),
+      items: [
+        {icon: ShareIcon, title: t('navbar7.socialMediaTitle'), description: t('navbar7.socialMediaDescription')},
+        {icon: EnvelopeIcon, title: t('navbar7.newsletterTitle'), description: t('navbar7.newsletterDescription')},
+        {icon: LifebuoyIcon, title: t('navbar7.supportTitle'), description: t('navbar7.supportDescription')},
+        {icon: BriefcaseIcon, title: t('navbar7.careersTitle'), description: t('navbar7.careersDescription')},
+      ]
+    },
+    {
+      title: t('navbar7.legalInformation'),
+      items: [
+        {icon: ShieldCheckIcon, title: t('navbar7.privacyPolicyTitle'), description: t('navbar7.privacyPolicyDescription')},
+        {icon: DocumentTextIcon, title: t('navbar7.termsOfServiceTitle'), description: t('navbar7.termsOfServiceDescription')},
+        {icon: MapIcon, title: t('navbar7.siteMapTitle'), description: t('navbar7.siteMapDescription')},
+        {icon: PhoneIcon, title: t('navbar7.contactInfoTitle'), description: t('navbar7.contactInfoDescription')},
+      ]
+    }
+  ]
+
+  
   return (
     <section className="sticky top-0 z-50 flex min-h-16 w-full items-center border-b border-neutral-light bg-neutral-bg px-[5%] md:min-h-18">
       <div className="mx-auto flex size-full max-w-full items-center justify-between">
@@ -123,26 +126,26 @@ export function Navbar7() {
               href="#"
               className="relative block w-auto py-3 text-neutral hover:text-primary transition-colors lg:inline-block lg:px-4 lg:py-6 lg:text-base font-sans"
             >
-              {t('home_page')}
+              {t('navbar7.homePage')}
             </a>
             <a
               href="#"
               className="relative block w-auto py-3 text-neutral hover:text-primary transition-colors lg:inline-block lg:px-4 lg:py-6 lg:text-base font-sans"
             >
-              {t('about_us')}
+              {t('navbar7.aboutUs')}
             </a>
             <a
               href="#"
               className="relative block w-auto py-3 text-neutral hover:text-primary transition-colors lg:inline-block lg:px-4 lg:py-6 lg:text-base font-sans"
             >
-              {t('our_services')}
+              {t('navbar7.ourServices')}
             </a>
             <div>
               <button
                 className="relative flex w-full items-center justify-between py-3 text-md whitespace-nowrap lg:w-auto lg:justify-start lg:gap-2 lg:px-4 lg:py-6 lg:text-base"
                 onClick={useActive.openOnMobileDropdownMenu}
               >
-                <span>{t('contact_us')}</span>
+                <span>{t('navbar7.contactUs')}</span>
                 <motion.span
                   animate={useActive.animateDropdownMenuIcon}
                   variants={{
@@ -208,9 +211,9 @@ export function Navbar7() {
                     <div className="absolute top-0 -right-[50vw] bottom-0 -left-[50vw] w-[200vw] bg-background-secondary" />
                     <div className="relative mb-4 grid auto-cols-fr grid-cols-[max-content] grid-rows-[auto_auto] items-center gap-x-2 gap-y-4 lg:mb-0 lg:flex lg:items-center">
                       <p>
-                        Ready to get started?
+                        {t('navbar7.readyToGetStarted')}
                         <a href="#" className="ml-1 underline">
-                          Sign up for free
+                          {t('navbar7.signUpForFree')}
                         </a>
                       </p>
                     </div>
@@ -221,7 +224,7 @@ export function Navbar7() {
                         size="link"
                       >
                         <UserPlusIcon className="size-6 shrink-0 text-primary" />
-                        Join
+                        {t('navbar7.joinButton')}
                       </Button>
                       <Button
                         title="Login"
@@ -229,7 +232,7 @@ export function Navbar7() {
                         size="link"
                       >
                         <ArrowRightOnRectangleIcon className="size-6 shrink-0 text-primary" />
-                        Login
+                        {t('navbar7.loginButton')}
                       </Button>
                     </div>
                   </div>
@@ -238,17 +241,17 @@ export function Navbar7() {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <Button title="English" variant="secondary" size="sm" className="rounded-md border border-primary text-primary px-6 py-3 font-semibold hover:bg-primary-light hover:text-white transition-colors" onClick={() => i18n.changeLanguage('en')}>
+            <Button title={t('navbar7.englishButton')} variant="secondary" size="sm" className="rounded-md border border-primary text-primary px-6 py-3 font-semibold hover:bg-primary-light hover:text-white transition-colors" onClick={() => i18n.changeLanguage('en')}>
               EN
             </Button>
-            <Button title="Español" variant="secondary" size="sm" className="rounded-md border border-primary text-primary px-6 py-3 font-semibold hover:bg-primary-light hover:text-white transition-colors" onClick={() => i18n.changeLanguage('es')}>
+            <Button title={t('navbar7.spanishButton')} variant="secondary" size="sm" className="rounded-md border border-primary text-primary px-6 py-3 font-semibold hover:bg-primary-light hover:text-white transition-colors" onClick={() => i18n.changeLanguage('es')}>
               ES
             </Button>
-            <Button title="Help" variant="secondary" size="sm" className="rounded-md border border-primary text-primary px-6 py-3 font-semibold hover:bg-primary-light hover:text-white transition-colors">
-              {t('help')}
+            <Button title={t('navbar7.helpButton')} variant="secondary" size="sm" className="rounded-md border border-primary text-primary px-6 py-3 font-semibold hover:bg-primary-light hover:text-white transition-colors">
+              {t('navbar7.helpButton')}
             </Button>
-            <Button title="Chat" size="sm" className="rounded-md border border-primary bg-primary px-6 py-3 text-white font-semibold shadow-soft hover:bg-primary-dark transition-colors">
-              {t('chat')}
+            <Button title={t('navbar7.chatButton')} size="sm" className="rounded-md border border-primary bg-primary px-6 py-3 text-white font-semibold shadow-soft hover:bg-primary-dark transition-colors">
+              {t('navbar7.chatButton')}
             </Button>
           </div>
         </div>

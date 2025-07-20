@@ -11,22 +11,22 @@ export function Contact19() {
   const cards = [
     {
       icon: <EnvelopeIcon className="size-12 text-primary" />,
-      title: t("email_title"),
-      description: t("email_description"),
+      title: t("contact19.emailTitle"),
+      description: t("contact19.emailDescription"),
       link: "hello@relume.io",
       href: "mailto:hello@relume.io",
     },
     {
       icon: <PhoneIcon className="size-12 text-primary" />,
-      title: t("phone_title"),
-      description: t("phone_description"),
+      title: t("contact19.phoneTitle"),
+      description: t("contact19.phoneDescription"),
       link: "+41 44 000 0000",
       href: "tel:+41440000000",
     },
     {
       icon: <MapPinIcon className="size-12 text-primary" />,
-      title: t("office_title"),
-      description: t("office_description"),
+      title: t("contact19.officeTitle"),
+      description: t("contact19.officeDescription"),
       link: "456 Example Ave, Zurich, Switzerland",
       href: "geo:47.3769,8.5417",
     },
@@ -36,12 +36,12 @@ export function Contact19() {
     <section className="bg-white py-16 md:py-24 lg:py-28">
       <div className="container mx-auto px-4">
         <div className="mb-12 max-w-lg text-center mx-auto md:mb-18 lg:mb-20">
-          <p className="mb-3 font-semibold text-primary md:mb-4">{t('connect')}</p>
+          <p className="mb-3 font-semibold text-primary md:mb-4">{t('contact19.connect')}</p>
           <h2 className="font-heading mb-5 text-4xl font-bold text-neutral md:mb-6 md:text-6xl lg:text-7xl">
-            {t('get_in_touch')}
+            {t('contact19.getInTouch')}
           </h2>
           <p className="text-lg text-neutral-light">
-            {t('get_in_touch_description')}
+            {t('contact19.getInTouchDescription')}
           </p>
         </div>
         <div className="grid grid-cols-1 gap-x-12 gap-y-12 md:grid-cols-3 md:gap-y-16">
