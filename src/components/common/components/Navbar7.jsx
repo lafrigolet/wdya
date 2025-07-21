@@ -1,36 +1,24 @@
 'use client';
 
 import { useTranslation } from 'react-i18next';
-import { Button, useMediaQuery } from "@relume_io/relume-ui";
+import { Button } from "@relume_io/relume-ui";
 import {
   CubeIcon,
   SparklesIcon,
   ArrowUpRightIcon,
-  ChartBarIcon,
-  StarIcon,
-  TrophyIcon,
   BuildingOfficeIcon,
-  GlobeAltIcon,
   QuestionMarkCircleIcon,
   NewspaperIcon,
-  BookOpenIcon,
   ChatBubbleLeftRightIcon,
-  FaceSmileIcon,
-  PhotoIcon,
   FolderOpenIcon,
   ShareIcon,
-  AtSymbolIcon,
   EnvelopeIcon,
   LifebuoyIcon,
   PhoneIcon,
   BriefcaseIcon,
-  UserGroupIcon,
   ShieldCheckIcon,
-  FingerPrintIcon,
   DocumentTextIcon,
   MapIcon,
-  GlobeAmericasIcon,
-  MapPinIcon,
   UserPlusIcon,
   ArrowRightOnRectangleIcon,
 } from "@heroicons/react/24/outline";

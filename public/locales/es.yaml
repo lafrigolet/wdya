@@ -1,3 +1,4 @@
+---
 contact19:
   emailTitle: "Envíanos un correo electrónico"
   emailDescription: "Envíanos un correo electrónico para consultas generales."
@@ -7,10 +8,17 @@ contact19:
   officeDescription: "Ven a visitarnos a nuestra oficina."
   connect: "Conectar"
   getInTouch: "Ponte en contacto"
-  getInTouchDescription: "Nos encantaría saber de ti. Si tienes alguna pregunta sobre nuestros servicios, necesitas ayuda o simplemente quieres saludar, nuestro equipo está listo para ayudarte."
+  getInTouchDescription: >
+    Nos encantaría saber de ti. Si tienes alguna pregunta sobre nuestros
+    servicios, necesitas ayuda o simplemente quieres saludar, nuestro equipo
+    está listo para ayudarte.
 header15:
   title: "Tu socio de desarrollo web para cada necesidad"
-  description: "Experimenta soluciones web sin interrupciones con nuestro soporte bilingüe y la innovadora función de modo oscuro/claro. Nos adaptamos a tus requisitos únicos, asegurando una experiencia fácil de usar en todos los dispositivos."
+  description: >
+    Experimenta soluciones web sin interrupciones con nuestro soporte bilingüe
+    y la innovadora función de modo oscuro/claro. Nos adaptamos a tus
+    requisitos únicos, asegurando una experiencia fácil de usar en todos los
+    dispositivos.
   hireButton: "Contratar"
   learnMoreButton: "Saber más"
 navbar7:
@@ -18,11 +26,13 @@ navbar7:
   starterPackageTitle: "Paquete Básico"
   starterPackageDescription: "Perfecto para pequeños proyectos y startups."
   growthPackageTitle: "Paquete Crecimiento"
-  growthPackageDescription: "Ideal para empresas en crecimiento y necesidades en expansión."
+  growthPackageDescription: >
+    Ideal para empresas en crecimiento y necesidades en expansión.
   proPackageTitle: "Paquete Pro"
   proPackageDescription: "Soluciones completas para empresas establecidas."
   enterprisePackageTitle: "Paquete Empresarial"
-  enterprisePackageDescription: "Soluciones personalizadas adaptadas a tu negocio."
+  enterprisePackageDescription: >
+    Soluciones personalizadas adaptadas a tu negocio.
   additionalResources: "Recursos Adicionales"
   faqsTitle: "Preguntas Frecuentes"
   faqsDescription: "Encuentra respuestas a preguntas comunes aquí."
@@ -63,10 +73,14 @@ navbar7:
   helpButton: "Ayuda"
   chatButton: "Chat"
 footer1:
-  newsletterDescription: "Suscríbete a nuestro boletín para las últimas actualizaciones sobre características y lanzamientos."
+  newsletterDescription: >
+    Suscríbete a nuestro boletín para las últimas actualizaciones sobre
+    características y lanzamientos.
   emailPlaceholder: "Tu correo electrónico aquí"
   subscribeButton: "Suscribirse"
-  privacyConsent: "Al suscribirte, aceptas nuestra Política de Privacidad y consientes recibir actualizaciones."
+  privacyConsent: >
+    Al suscribirte, aceptas nuestra Política de Privacidad y consientes recibir
+    actualizaciones.
   usefulLinks: "Enlaces Útiles"
   homePage: "Página de Inicio"
   aboutUs: "Sobre Nosotros"
@@ -89,3 +103,110 @@ footer1:
   privacyPolicy: "Política de Privacidad"
   termsOfService: "Términos de Servicio"
   cookieSettings: "Configuración de Cookies"
+layout241:
+  services: "Servicios"
+  title: "Nuestras Soluciones Integrales de Desarrollo Web"
+  description: >
+    Ofrecemos una gama de servicios adaptados para satisfacer tus necesidades
+    de desarrollo web. Desde el desarrollo de React hasta la optimización SEO,
+    nos aseguramos de que tu presencia en línea sea sólida y efectiva.
+  feature1Name: "Desarrollo Experto en React"
+  feature1Description: >
+    Aprovecha el poder de React para construir aplicaciones web dinámicas y
+    responsivas.
+  feature2Name: "Optimización SEO"
+  feature2Description: >
+    Optimiza tu sitio web para posicionarte más alto y atraer más visitantes.
+  feature3Name: "Mantenimiento y Soporte"
+  feature3Description: >
+    Asegura que tu sitio web funcione sin problemas con nuestros servicios de
+    mantenimiento continuo.
+  feature4Name: "Seguridad Avanzada"
+  feature4Description: >
+    Nos tomamos la seguridad en serio e implementamos las mejores prácticas
+    para proteger tus datos.
+  feature5Name: "Modo Oscuro y Claro"
+  feature5Description: "Detección automática y/o alternancia manual"
+testimonial19:
+  title: "Testimonios de Clientes"
+  description: >
+    ¡Servicio excepcional y resultados sobresalientes en todo momento!
+cta1:
+  title: "Desbloquea tu Paquete Perfecto Hoy"
+  description: >
+    Explora nuestros paquetes personalizados diseñados para elevar tu
+    experiencia de desarrollo web e impulsar tu negocio.
+  hireButton: "Contratar"
+  learnMoreButton: "Saber más"
+faq5:
+  question1: "¿Qué servicios ofrecen?"
+  answer1: >
+    Ofrecemos una gama de servicios que incluyen desarrollo de React,
+    optimización SEO y consultoría técnica. Nuestros paquetes están diseñados
+    para satisfacer diversas necesidades, desde startups hasta empresas. Cada
+    servicio se adapta para garantizar un rendimiento óptimo y la satisfacción
+    del usuario.
+  question2: "¿Cómo se estructura el precio?"
+  answer2: >
+    Nuestros precios se basan en paquetes por horas, ofreciendo flexibilidad
+    para diferentes alcances de proyectos. El paquete Starter comienza en 950
+    CHF por 10 horas, mientras que los proyectos más grandes se pueden
+    personalizar. Esta estructura asegura que solo pagues por lo que necesitas.
+  question3: "¿Hay soporte multilingüe disponible?"
+  answer3: >
+    Sí, ofrecemos soporte bilingüe en español e inglés. Nuestro equipo está
+    capacitado para ayudar a los clientes en ambos idiomas, asegurando una
+    comunicación clara. También planeamos expandir el soporte a idiomas
+    adicionales en el futuro.
+  question4: "¿Cómo puedo contactarlos?"
+  answer4: >
+    Puedes contactarnos a través de nuestro formulario de contacto, correo
+    electrónico o vía WhatsApp/Telegram. Estamos aquí para ayudarte con
+    cualquier consulta o presupuesto que necesites. Nuestro equipo está listo
+    para responder rápidamente.
+  question5: "¿Cuál es su tiempo de respuesta?"
+  answer5: >
+    Nos esforzamos por responder a todas las consultas en un plazo de 24 horas.
+    Nuestro objetivo es proporcionar soporte oportuno para asegurar que tus
+    proyectos se mantengan en marcha. Tu satisfacción es nuestra prioridad.
+  title: "Preguntas frecuentes"
+  stillHaveQuestions: "¿Todavía tienes preguntas?"
+  hereToHelp: "¡Estamos aquí para ayudarte!"
+  contactButton: "Contacto"
+team5:
+  member1Name: "Alice Johnson"
+  member1Position: "Gerente de Proyecto"
+  member1Description: >
+    Alice asegura que los proyectos se entreguen a tiempo y superen las
+    expectativas del cliente.
+  member2Name: "Mark Smith"
+  member2Position: "Desarrollador Principal"
+  member2Description: >
+    Mark se especializa en la creación de soluciones innovadoras utilizando las
+    últimas tecnologías.
+  member3Name: "Sarah Lee"
+  member3Position: "Diseñadora de UX"
+  member3Description: >
+    Sarah crea diseños fáciles de usar que mejoran la experiencia general.
+  member4Name: "David Brown"
+  member4Position: "Especialista en SEO"
+  member4Description: >
+    David optimiza nuestros proyectos para asegurar la máxima visibilidad y
+    rendimiento.
+  member5Name: "Emily Davis"
+  member5Position: "Gerente de Marketing"
+  member5Description: >
+    Emily impulsa nuestras estrategias de marketing para conectar con los
+    clientes de manera efectiva.
+  member6Name: "¡Estamos Contratando!"
+  member6Position: "Únete a Nosotros"
+  member6Description: >
+    Explora emocionantes oportunidades para hacer crecer tu carrera con
+    nosotros.
+  member6Alt: "Estamos contratando"
+  meet: "Conoce a"
+  title: "Nuestro Equipo"
+  description: "Profesionales dedicados comprometidos con tu éxito."
+  openPositions: "Puestos Vacantes"
+  checkJobOpenings: "¡Echa un vistazo a nuestras ofertas de trabajo actuales!"
+  applyNow: "Aplicar Ahora"

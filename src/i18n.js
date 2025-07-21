@@ -13,7 +13,10 @@ i18n
         debug: false,
         backend: {
             loadPath: '/locales/{{lng}}.yaml',
-            parse: (data) => yaml.load(data), // parse YAML
+          parse: (data) => {
+            console.log('+++++++++++++++++', data);
+            return yaml.load(data);
+          },
         },
     });
 

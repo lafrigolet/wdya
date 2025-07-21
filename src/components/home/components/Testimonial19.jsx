@@ -8,6 +8,7 @@ import {
   CarouselPrevious,
 } from "@relume_io/relume-ui";
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { BiSolidStar } from "react-icons/bi";
 import Card from "../../common/Card";
 
@@ -57,16 +58,17 @@ const useCarousel = () => {
 };
 
 export function Testimonial19() {
+  const { t } = useTranslation();
   const carousel = useCarousel();
   return (
     <section className="bg-white py-16 md:py-24 lg:py-28">
       <div className="container mx-auto px-4">
         <div className="mx-auto mb-12 w-full max-w-lg text-center md:mb-18 lg:mb-20">
           <h2 className="font-heading text-4xl font-bold text-neutral mb-5 md:text-6xl lg:text-7xl">
-            Customer Testimonials
+            {t('testimonial19.title')}
           </h2>
           <p className="text-lg text-neutral-light">
-            Exceptional service and outstanding results every time!
+            {t('testimonial19.description')}
           </p>
         </div>
         <Carousel

@@ -2,53 +2,51 @@
 
 import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
 
-const features = [
-  {
-    name: 'Expert React Development',
-    description:
-      'Leverage the power of React to build dynamic and responsive web applications.',
-    icon: CloudArrowUpIcon,
-  },
-  {
-    name: 'SEO Optimization',
-    description:
-      'Optimize your website to rank higher and attract more visitors.',
-    icon: LockClosedIcon,
-  },
-  {
-    name: 'Maintenance and Support',
-    description:
-      'Ensure your website runs smoothly with our ongoing maintenance services.',
-    icon: ArrowPathIcon,
-  },
-  {
-    name: 'Advanced security',
-    description:
-      'We take security seriously and implement the best practices to protect your data.',
-    icon: FingerPrintIcon,
-  },
-  {
-    name: 'Dark & Light Mode',
-    description:
-    'Automatic detection and/or manual toggle',
-    icon: LockClosedIcon,
-  },
-]
-
 export function Layout241() {
+  const { t } = useTranslation();
+
+  const features = [
+    {
+      name: t('layout241.feature1Name'),
+      description: t('layout241.feature1Description'),
+      icon: CloudArrowUpIcon,
+    },
+    {
+      name: t('layout241.feature2Name'),
+      description: t('layout241.feature2Description'),
+      icon: LockClosedIcon,
+    },
+    {
+      name: t('layout241.feature3Name'),
+      description: t('layout241.feature3Description'),
+      icon: ArrowPathIcon,
+    },
+    {
+      name: t('layout241.feature4Name'),
+      description: t('layout241.feature4Description'),
+      icon: FingerPrintIcon,
+    },
+    {
+      name: t('layout241.feature5Name'),
+      description: t('layout241.feature5Description'),
+      icon: LockClosedIcon,
+    },
+  ]
+
+
   return (
     <section className="bg-white py-16 md:py-24 lg:py-28">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-base font-semibold leading-7 text-primary">Services</h2>
+          <h2 className="text-base font-semibold leading-7 text-primary">{t('layout241.services')}</h2>
           <p className="mt-2 font-heading text-4xl font-bold tracking-tight text-neutral sm:text-5xl">
-            Our Comprehensive Web Development Solutions
+            {t('layout241.title')}
           </p>
           <p className="mt-6 text-lg leading-8 text-neutral-light">
-            We offer a range of services tailored to meet your web development needs. From React development to SEO
-            optimization, we ensure your online presence is robust and effective.
+            {t('layout241.description')}
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">

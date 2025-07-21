@@ -1,3 +1,4 @@
+---
 contact19:
   emailTitle: "Email Us"
   emailDescription: "Send us an email for general inquiries."
@@ -7,10 +8,15 @@ contact19:
   officeDescription: "Come visit us at our office location."
   connect: "Connect"
   getInTouch: "Get in Touch"
-  getInTouchDescription: "We'd love to hear from you. Whether you have a question about our services, need assistance, or just want to say hello, our team is ready to help."
+  getInTouchDescription: >
+    We'd love to hear from you. Whether you have a question about our services,
+    need assistance, or just want to say hello, our team is ready to help.
 header15:
   title: "Your Web Development Partner for Every Need"
-  description: "Experience seamless web solutions with our bilingual support and innovative dark/light mode feature. We cater to your unique requirements, ensuring a user-friendly experience across all devices."
+  description: >
+    Experience seamless web solutions with our bilingual support and innovative
+    dark/light mode feature. We cater to your unique requirements, ensuring a
+    user-friendly experience across all devices.
   hireButton: "Hire"
   learnMoreButton: "Learn More"
 navbar7:
@@ -43,7 +49,9 @@ navbar7:
   careersDescription: "Join our talented team."
   legalInformation: "Legal Information"
   privacyPolicyTitle: "Privacy Policy"
+  privacyPolicyDescription: "Read our privacy practices."
   termsOfServiceTitle: "Terms of Service"
+  termsOfServiceDescription: "Understand our service terms."
   siteMapTitle: "Site Map"
   contactInfoTitle: "Contact Info"
   contactInfoDescription: "Get in touch with us."
@@ -60,10 +68,13 @@ navbar7:
   helpButton: "Help"
   chatButton: "Chat"
 footer1:
-  newsletterDescription: "Subscribe to our newsletter for the latest updates on features and releases."
+  newsletterDescription: >
+    Subscribe to our newsletter for the latest updates on features and releases.
   emailPlaceholder: "Your email here"
   subscribeButton: "Subscribe"
-  privacyConsent: "By subscribing, you agree to our Privacy Policy and consent to receive updates."
+  privacyConsent: >
+    By subscribing, you agree to our Privacy Policy and consent to receive
+    updates.
   usefulLinks: "Useful Links"
   homePage: "Home Page"
   aboutUs: "About Us"
@@ -86,3 +97,102 @@ footer1:
   privacyPolicy: "Privacy Policy"
   termsOfService: "Terms of Service"
   cookieSettings: "Cookie Settings"
+layout241:
+  services: "Services"
+  title: "Our Comprehensive Web Development Solutions"
+  description: >
+    We offer a range of services tailored to meet your web development needs.
+    From React development to SEO optimization, we ensure your online presence
+    is robust and effective.
+  feature1Name: "Expert React Development"
+  feature1Description: >
+    Leverage the power of React to build dynamic and responsive web
+    applications.
+  feature2Name: "SEO Optimization"
+  feature2Description: >
+    Optimize your website to rank higher and attract more visitors.
+  feature3Name: "Maintenance and Support"
+  feature3Description: >
+    Ensure your website runs smoothly with our ongoing maintenance services.
+  feature4Name: "Advanced security"
+  feature4Description: >
+    We take security seriously and implement the best practices to protect your
+    data.
+  feature5Name: "Dark & Light Mode"
+  feature5Description: "Automatic detection and/or manual toggle"
+testimonial19:
+  title: "Customer Testimonials"
+  description: "Exceptional service and outstanding results every time!"
+cta1:
+  title: "Unlock Your Perfect Package Today"
+  description: >
+    Explore our tailored packages designed to elevate your web development
+    experience and boost your business.
+  hireButton: "Hire"
+  learnMoreButton: "Learn More"
+faq5:
+  question1: "What services do you offer?"
+  answer1: >
+    We provide a range of services including React development, SEO
+    optimization, and technical consulting. Our packages are designed to meet
+    various needs, from startups to enterprises. Each service is tailored to
+    ensure optimal performance and user satisfaction.
+  question2: "How is pricing structured?"
+  answer2: >
+    Our pricing is based on hourly packages, offering flexibility for different
+    project scopes. The Starter package begins at 950 CHF for 10 hours, while
+    larger projects can be customized. This structure ensures you only pay for
+    what you need.
+  question3: "Is multilingual support available?"
+  answer3: >
+    Yes, we offer bilingual support in Spanish and English. Our team is equipped
+    to assist clients in both languages, ensuring clear communication. We also
+    plan to expand support to additional languages in the future.
+  question4: "How can I contact you?"
+  answer4: >
+    You can reach us through our contact form, email, or via WhatsApp/Telegram.
+    We are here to assist you with any inquiries or quotes you may need. Our
+    team is ready to respond promptly.
+  question5: "What is your response time?"
+  answer5: >
+    We strive to respond to all inquiries within 24 hours. Our goal is to
+    provide timely support to ensure your projects stay on track. Your
+    satisfaction is our priority.
+  title: "Frequently asked questions"
+  stillHaveQuestions: "Still have questions?"
+  hereToHelp: "We're here to help!"
+  contactButton: "Contact"
+team5:
+  member1Name: "Alice Johnson"
+  member1Position: "Project Manager"
+  member1Description: >
+    Alice ensures projects are delivered on time and exceed client
+    expectations.
+  member2Name: "Mark Smith"
+  member2Position: "Lead Developer"
+  member2Description: >
+    Mark specializes in creating innovative solutions using the latest
+    technologies.
+  member3Name: "Sarah Lee"
+  member3Position: "UX Designer"
+  member3Description: >
+    Sarah crafts user-friendly designs that enhance the overall experience.
+  member4Name: "David Brown"
+  member4Position: "SEO Specialist"
+  member4Description: >
+    David optimizes our projects to ensure maximum visibility and performance.
+  member5Name: "Emily Davis"
+  member5Position: "Marketing Manager"
+  member5Description: >
+    Emily drives our marketing strategies to connect with clients effectively.
+  member6Name: "We're Hiring!"
+  member6Position: "Join Us"
+  member6Description: >
+    Explore exciting opportunities to grow your career with us.
+  member6Alt: "We're hiring"
+  meet: "Meet"
+  title: "Our Team"
+  description: "Dedicated professionals committed to your success."
+  openPositions: "Open Positions"
+  checkJobOpenings: "Check out our current job openings!"
+  applyNow: "Apply Now"

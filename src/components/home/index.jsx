@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar7 } from "../common/components/Navbar7";
 import { Header15 } from "./components/Header15";
-import { Layout10 } from "./components/Layout10";
+
 import { Layout241 } from "./components/Layout241";
 import { Testimonial19 } from "./components/Testimonial19";
 import { Cta1 } from "./components/Cta1";

@@ -51,6 +51,7 @@ Explain how to:
 ---
 
 ## **After these steps, output:**
+- Apply `yamllint` to `src/locales/en.yaml` and `src/locales/es.yaml` and solve all the reported errors
 - The final project structure (showing `src/locales/en.yaml` and `src/locales/es.yaml`)
 - The modified `Contact19.jsx`
 - The complete `i18n.js` configuration file

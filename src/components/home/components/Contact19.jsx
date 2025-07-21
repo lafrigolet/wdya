@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import Card from "../../common/Card";
 import { motion } from "framer-motion";

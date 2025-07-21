@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@relume_io/relume-ui";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { BiLogoDribbble, BiLogoLinkedinSquare } from "react-icons/bi";
 import { FaXTwitter } from "react-icons/fa6";
@@ -14,43 +14,44 @@ import teamHeadshot5 from "../assets/images/team_headshot_5.jpg";
 import teamHeadshot6 from "../assets/images/team_headshot_6.jpg";
 
 export function Team5() {
+  const { t } = useTranslation();
   const members = [
     {
       pic: teamHeadshot1,
-      name: "Alice Johnson",
-      position: "Project Manager",
-      description: "Alice ensures projects are delivered on time and exceed client expectations.",
+      name: t('team5.member1Name'),
+      position: t('team5.member1Position'),
+      description: t('team5.member1Description'),
     },
     {
       pic: teamHeadshot2,
-      name: "Mark Smith",
-      position: "Lead Developer",
-      description: "Mark specializes in creating innovative solutions using the latest technologies.",
+      name: t('team5.member2Name'),
+      position: t('team5.member2Position'),
+      description: t('team5.member2Description'),
     },
     {
       pic: teamHeadshot3,
-      name: "Sarah Lee",
-      position: "UX Designer",
-      description: "Sarah crafts user-friendly designs that enhance the overall experience.",
+      name: t('team5.member3Name'),
+      position: t('team5.member3Position'),
+      description: t('team5.member3Description'),
     },
     {
       pic: teamHeadshot4,
-      name: "David Brown",
-      position: "SEO Specialist",
-      description: "David optimizes our projects to ensure maximum visibility and performance.",
+      name: t('team5.member4Name'),
+      position: t('team5.member4Position'),
+      description: t('team5.member4Description'),
     },
     {
       pic: teamHeadshot5,
-      name: "Emily Davis",
-      position: "Marketing Manager",
-      description: "Emily drives our marketing strategies to connect with clients effectively.",
+      name: t('team5.member5Name'),
+      position: t('team5.member5Position'),
+      description: t('team5.member5Description'),
     },
     {
       pic: teamHeadshot6,
-      name: "We're Hiring!",
-      position: "Join Us",
-      description: "Explore exciting opportunities to grow your career with us.",
-      alt: "We're hiring",
+      name: t('team5.member6Name'),
+      position: t('team5.member6Position'),
+      description: t('team5.member6Description'),
+      alt: t('team5.member6Alt'),
     },
   ];
 
@@ -91,13 +92,13 @@ export function Team5() {
               </div>
               <p className="text-neutral-light">{member.description}</p>
               <div className="mt-6 grid grid-flow-col grid-cols-[max-content] gap-3.5 self-center text-primary">
-                <a href="#">
+                <a href="#" onClick={(e) => e.preventDefault()}>
                   <BiLogoLinkedinSquare className="size-6" />
                 </a>
-                <a href="#">
+                <a href="#" onClick={(e) => e.preventDefault()}>
                   <FaXTwitter className="size-6 p-0.5" />
                 </a>
-                <a href="#">
+                <a href="#" onClick={(e) => e.preventDefault()}>
                   <BiLogoDribbble className="size-6" />
                 </a>
               </div>
